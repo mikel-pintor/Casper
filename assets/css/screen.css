@@ -473,7 +473,7 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     display: table;
     width: 100%;
-    height: 40%;
+    height: 30%;
     margin-bottom: 5rem;
     text-align: center;
     background: #222 no-repeat center center;
@@ -919,7 +919,7 @@ body:not(.post-template) .post-title {
 }
 
 /* list of author links - location / url */
-.author-meta {
+.author-meta, .tag-meta {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -929,10 +929,10 @@ body:not(.post-template) .post-title {
     color: #9EABB3;
 }
 
-.author-meta a {
+.author-meta a, .tag-meta a {
     color: #9EABB3;
 }
-.author-meta a:hover {
+.author-meta a:hover, .tag-meta a:hover{
     color: #111;
 }
 
@@ -1067,7 +1067,7 @@ body:not(.post-template) .post-title {
 }
 
 .tag-head.main-header {
-    height: 40%;
+    height: 30%;
     min-height: 180px;
 }
 
@@ -1082,14 +1082,15 @@ body:not(.post-template) .post-title {
     background: transparent;
 }
 
-.author-profile {
+.author-profile, .tag-profile {
     padding: 0 15px 5rem 15px;
     border-bottom: #EBF2F6 1px solid;
     text-align: center;
 }
 
 /* Add a little circle in the middle of the border-bottom */
-.author-profile:after {
+.author-profile:after,
+.tag-profile:after {
     display: block;
     content: "";
     width: 7px;
@@ -1146,7 +1147,7 @@ body:not(.post-template) .post-title {
     box-shadow: none;
 }
 
-.author-title {
+.author-title, .tag-title {
     margin: 1.5rem 0 1rem;
 }
 
@@ -1159,22 +1160,25 @@ body:not(.post-template) .post-title {
     text-indent: 0;
 }
 
-.author-meta {
+.author-meta, .tag-meta {
     margin: 1.6rem 0;
 }
 /* Location, website, and link */
-.author-profile .author-meta {
+.author-profile .author-meta,
+.tag-profile .tag-meta {
     margin: 2rem 0;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
 }
-.author-meta span {
+.author-meta span,
+.tag-meta span {
     display: inline-block;
     margin: 0 2rem 1rem 0;
     word-wrap: break-word;
 }
-.author-meta a {
+.author-meta a,
+.tag-meta a {
     text-decoration: none;
 }
 
@@ -1350,8 +1354,8 @@ body:not(.post-template) .post-title {
         box-sizing: border-box;
         height: auto;
         min-height: 240px;
-        height: 40%;
-        padding: 15% 0;
+        height: 30%;
+        /*padding: 15% 0;*/
     }
 
     .scroll-down,
@@ -1462,7 +1466,7 @@ body:not(.post-template) .post-title {
 
     .main-header {
         margin-bottom: 15px;
-        height: 40%;
+        height: 30%;
     }
 
     .no-cover.main-header {
